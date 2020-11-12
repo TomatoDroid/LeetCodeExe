@@ -8,6 +8,7 @@ var MyQueue = function () {
 
 /**
  * Push element x to the back of queue.
+ * 每次添加新元素，将都stack1腾空挪到stack2，加入新元素后在挪回stack1
  * @param {number} x
  * @return {void}
  */

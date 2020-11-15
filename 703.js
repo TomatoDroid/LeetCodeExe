@@ -1,5 +1,6 @@
 /**
  * 时间复杂度O(㏒k)
+ * 维护第K大（小）元素适合使用优先队列（小大顶堆）
  */
 class KthLargest {
   constructor(k, nums) {

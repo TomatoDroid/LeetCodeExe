@@ -1,3 +1,6 @@
+/**
+ * 时间复杂度O(㏒k)
+ */
 class KthLargest {
   constructor(k, nums) {
     this.k = k;

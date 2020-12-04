@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
- * 固定窗口，最大值两个条件，所以不需要使用优先队列，使用双端队列即刻
+ * 固定窗口，最大值两个条件，所以不需要使用优先队列，使用双端队列即可
  * 时间复杂度O(N)
  */
 var maxSlidingWindow = function (nums, k) {

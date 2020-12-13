@@ -40,3 +40,51 @@ def divide_conquer(problem, param1, param2, ...) {
     result = process_result(subresult1, subresult2, subresult3, ...)
 }
 ```
+
+### BFS
+
+```python
+def BFS(graph, start, end)
+    queue = []
+    queue.append([start])
+    visited.add(start)
+
+    while queue:
+        node = queue.pop()
+        visited.add(node)
+
+        process(node)
+        nodes = generate_related_nodes(node)
+        queue.append(nodes)
+    # other processing work
+```
+
+### DFS
+```python
+# 递归写法
+visited = set()
+def dfs(node, visited)
+    visited.add(node)
+    # process current node here
+    ...
+    for next_node in node.children():
+        if not next_node in visited
+            DFS(next_node, visited) 
+```
+```python
+# 非递归写法
+visited = set()
+def dfs(self, tree)
+    if tree.root is None:
+        return []
+    
+    visited, stack = [], [tree.root]
+    while stack:
+        node = stack.pop()
+        visited.add(node)
+
+        process(node)
+        nodes = generate_related_nodes(node)
+        stack.push(nodes)
+    # other process work
+```

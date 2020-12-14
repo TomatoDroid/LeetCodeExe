@@ -46,16 +46,16 @@ def divide_conquer(problem, param1, param2, ...) {
 ```python
 def BFS(graph, start, end)
     queue = []
-    queue.append([start])
+    queue.append([start]) # js queue.push()
     visited.add(start)
 
     while queue:
-        node = queue.pop()
+        node = queue.pop()  # js queue.shift()
         visited.add(node)
 
         process(node)
         nodes = generate_related_nodes(node)
-        queue.append(nodes)
+        queue.push(nodes)
     # other processing work
 ```
 

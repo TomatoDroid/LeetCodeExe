@@ -60,6 +60,7 @@ def BFS(graph, start, end)
 ```
 
 ### DFS
+
 ```python
 # 递归写法
 visited = set()
@@ -69,15 +70,16 @@ def dfs(node, visited)
     ...
     for next_node in node.children():
         if not next_node in visited
-            DFS(next_node, visited) 
+            DFS(next_node, visited)
 ```
+
 ```python
 # 非递归写法
 visited = set()
 def dfs(self, tree)
     if tree.root is None:
         return []
-    
+
     visited, stack = [], [tree.root]
     while stack:
         node = stack.pop()
@@ -87,4 +89,25 @@ def dfs(self, tree)
         nodes = generate_related_nodes(node)
         stack.push(nodes)
     # other process work
+```
+
+### 二分查找
+
+- Sorted（单调递增或递减）
+- Bounded（存在上下界）
+- Accessible by index（能有通过索引访问）
+- 适用数组
+
+```python
+left = 0
+right = len(arr) - 1
+while left <= right
+    mid = (left + right) / 2
+    if array[mid] == target
+        # find the target
+        break or return result
+    elif  array[mid] < target
+        left = mid + 1
+    elif:
+        right = mid - 1
 ```

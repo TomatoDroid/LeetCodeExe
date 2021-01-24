@@ -1,22 +1,6 @@
 /**
  * @param {number} n
  * @return {boolean}
- * 时间复杂度 O(logN)
- */
-var isPowerOfTwo = function (n) {
-  let s = 1;
-  while (s < n) {
-    if (s < 0) {
-      return false;
-    }
-    s = s << 1;
-  }
-  return n === s;
-};
-
-/**
- * @param {number} n
- * @return {boolean}
  * 时间复杂度 O(1)
  * 只有2的幂次方符合 =》 x & -x === x
  */

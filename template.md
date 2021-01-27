@@ -1,4 +1,6 @@
-### 递归模板
+# 算法模板
+
+## 递归模板
 
 ```python
 def recursion(level, param1, param2, ...) {
@@ -17,7 +19,7 @@ def recursion(level, param1, param2, ...) {
 }
 ```
 
-### 分治模板
+## 分治模板
 
 ```python
 def divide_conquer(problem, param1, param2, ...) {
@@ -41,7 +43,7 @@ def divide_conquer(problem, param1, param2, ...) {
 }
 ```
 
-### BFS
+## BFS
 
 ```python
 def BFS(graph, start, end)
@@ -59,7 +61,7 @@ def BFS(graph, start, end)
     # other processing work
 ```
 
-### DFS
+## DFS
 
 ```python
 # 递归写法
@@ -91,7 +93,7 @@ def dfs(self, tree)
     # other process work
 ```
 
-### 二分查找
+## 二分查找
 
 - Sorted（单调递增或递减）
 - Bounded（存在上下界）
@@ -111,3 +113,10 @@ while left <= right
     elif:
         right = mid - 1
 ```
+
+## 动态规划 Dynamic Programming(动态递推)
+
+- 递归+记忆化 => 递推
+- 状态的定义 opt[n], dp[n], fib[n]
+- 状态转移方程 opt[n] = best_of(opt[n-1], opt[n-2], …)
+- 最优子结构
